@@ -79,7 +79,7 @@ function productsList(arr) {
   let ul = document.createElement('ul');
   arr.forEach(elems => {
     let li = document.createElement('li');
-    li.textContent = `Продукт: ${elems.product}; количество: ${elems.quantity};  куплен: ${elems. purchased}`;
+    li.textContent = `Продукт: ${elems.product}; Количество: ${elems.quantity};  Куплен: ${elems. purchased}`;
     ul.append(li);
   });
   return ul; // возвращаем список
