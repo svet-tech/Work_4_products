@@ -49,11 +49,11 @@ function purchaseProduct(productName) {
   }
 }
 
-// Пример добавления продукта в список
+
 addProduct('Яблоки', 3); // Увеличивает количество яблок до 8
 addProduct('Чай', 2); // Добавляет новый продукт - Чай
 
-// Пример отметки покупки
+
 purchaseProduct('Хлеб'); // Отмечает Хлеб как купленный
 
 
@@ -79,7 +79,7 @@ function productsList(arr) {
   let ul = document.createElement('ul');
   arr.forEach(elems => {
     let li = document.createElement('li');
-    li.textContent = `product: ${elems.product}; quantity: ${elems.quantity};  purchased: ${elems. purchased}`;
+    li.textContent = `Продукт: ${elems.product}; количество: ${elems.quantity};  куплен: ${elems. purchased}`;
     ul.append(li);
   });
   return ul; // возвращаем список
